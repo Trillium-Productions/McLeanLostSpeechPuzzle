@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISView" customModule="LostSpeechPuzzle" customModuleProvider="target">
+            <connections>
+                <outlet property="intro" destination="edd-NP-hkT" id="c0l-01-iu6"/>
+                <outlet property="picker" destination="6sY-7g-kLU" id="Pos-a3-GRX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="2048" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sY-7g-kLU" customClass="PickingView" customModule="LostSpeechPuzzle" customModuleProvider="target">
+                    <rect key="frame" x="1024" y="0.0" width="1024" height="768"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1024" id="Zpf-ts-fQK"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.zPosition">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ahU-mN-9aH">
+                    <rect key="frame" x="0.0" y="0.0" width="2048" height="768"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.zPosition">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edd-NP-hkT" customClass="IntroView" customModule="LostSpeechPuzzle" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1024" id="iVn-OO-I4u"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.zPosition">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ahU-mN-9aH" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="2yI-ky-sA6"/>
+                <constraint firstItem="ahU-mN-9aH" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="3dq-8o-klj"/>
+                <constraint firstItem="ahU-mN-9aH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4Cg-JE-tiy"/>
+                <constraint firstItem="edd-NP-hkT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="DrY-SJ-d0S"/>
+                <constraint firstItem="edd-NP-hkT" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Erw-qb-cdp"/>
+                <constraint firstItem="edd-NP-hkT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Njb-sB-kgT"/>
+                <constraint firstItem="6sY-7g-kLU" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="TYS-pL-nQH"/>
+                <constraint firstAttribute="trailing" secondItem="6sY-7g-kLU" secondAttribute="trailing" id="WrB-nm-tzb"/>
+                <constraint firstItem="6sY-7g-kLU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gMu-Ef-1dm"/>
+                <constraint firstItem="ahU-mN-9aH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hN3-jz-ZIu"/>
+                <constraint firstItem="6sY-7g-kLU" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="i8N-4x-m5s"/>
+                <constraint firstItem="edd-NP-hkT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jrt-qn-8ge"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="DrY-SJ-d0S"/>
+                    <exclude reference="i8N-4x-m5s"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="5616" height="3744"/>
+    </resources>
+</document>

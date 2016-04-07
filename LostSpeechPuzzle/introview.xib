@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Corbel-BoldItalic.ttf">
+            <string>Corbel-BoldItalic</string>
+        </mutableArray>
+        <mutableArray key="Corbel.ttf">
+            <string>Corbel</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroView" customModule="LostSpeechPuzzle" customModuleProvider="target">
+            <connections>
+                <outlet property="stcPrompt" destination="bi6-lu-7Tc" id="nPs-kz-jFu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LincolnSpeaking" translatesAutoresizingMaskIntoConstraints="NO" id="gki-xL-tJf">
+                    <rect key="frame" x="36" y="114" width="309" height="236"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="236" id="QRF-hF-SW5"/>
+                        <constraint firstAttribute="width" constant="309" id="ynO-qx-Whh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can You Find Lincoln's Lost Speech?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmD-uY-fyI">
+                    <rect key="frame" x="181" y="37" width="663" height="54"/>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="45"/>
+                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lincoln Giving One of His Famous Speeches" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlI-Th-E24">
+                    <rect key="frame" x="36" y="374" width="309" height="61.5"/>
+                    <fontDescription key="fontDescription" name="Corbel-BoldItalic" family="Corbel" pointSize="25"/>
+                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LJ-jj-pT7">
+                    <rect key="frame" x="381" y="114" width="607" height="499.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">On May 29, 1856, a convention was held in Bloomington to form a new political party in Illinois dedicated to halting the spread of slavery. This party was named the Republican Party.
+
+Abraham Lincoln delivered the keynote address that evening to an estimated 1,000 people at Major’s Hall. This three-story building was located one block south of where you are right now! Lincoln spoke for approximately 90 minutes without notes. 
+
+Although dubbed “lost,” the content of the speech is not a complete mystery. In fact, historians know much of what Lincoln said that historic night. Help us piece together the not-so-lost Lost Speech by identifying sources available during Lincoln’s era that have helped historians understand this passionate appeal against slavery.
+
+Six of these nine pieces will complete a puzzle. Once completed you will have “found” the Lost Speech.</string>
+                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="22"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stc" translatesAutoresizingMaskIntoConstraints="NO" id="bi6-lu-7Tc">
+                    <rect key="frame" x="212" y="665" width="600" height="54.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="600" id="fgO-Ya-W5K"/>
+                        <constraint firstAttribute="width" secondItem="bi6-lu-7Tc" secondAttribute="height" multiplier="11:1" id="vbJ-1S-BER"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5LJ-jj-pT7" firstAttribute="top" secondItem="PmD-uY-fyI" secondAttribute="bottom" constant="23" id="CcY-re-QGI"/>
+                <constraint firstItem="gki-xL-tJf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="DIu-DM-3ZA"/>
+                <constraint firstItem="WlI-Th-E24" firstAttribute="width" secondItem="gki-xL-tJf" secondAttribute="width" id="KXu-dC-5Rk"/>
+                <constraint firstItem="WlI-Th-E24" firstAttribute="centerX" secondItem="gki-xL-tJf" secondAttribute="centerX" id="PQC-GL-0Nv"/>
+                <constraint firstAttribute="trailing" secondItem="5LJ-jj-pT7" secondAttribute="trailing" constant="36" id="Uy2-jJ-GiK"/>
+                <constraint firstItem="PmD-uY-fyI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="37" id="Wrk-FO-Q34"/>
+                <constraint firstItem="5LJ-jj-pT7" firstAttribute="leading" secondItem="gki-xL-tJf" secondAttribute="trailing" constant="36" id="XEp-E9-sWP"/>
+                <constraint firstItem="gki-xL-tJf" firstAttribute="top" secondItem="PmD-uY-fyI" secondAttribute="bottom" constant="23" id="Yiq-1s-tNo"/>
+                <constraint firstItem="bi6-lu-7Tc" firstAttribute="top" secondItem="5LJ-jj-pT7" secondAttribute="bottom" constant="51.5" id="lot-I8-eOz"/>
+                <constraint firstItem="WlI-Th-E24" firstAttribute="top" secondItem="gki-xL-tJf" secondAttribute="bottom" constant="24" id="tcx-yy-EZ4"/>
+                <constraint firstItem="PmD-uY-fyI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wEj-0H-CZa"/>
+                <constraint firstItem="bi6-lu-7Tc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yVH-gK-ZgF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+        </view>
+        <tapGestureRecognizer id="Wpy-yY-REI">
+            <connections>
+                <action selector="onTapNext:" destination="-1" id="Zyp-3g-8So"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="LincolnSpeaking" width="422" height="338"/>
+        <image name="stc" width="1760" height="160"/>
+    </resources>
+</document>

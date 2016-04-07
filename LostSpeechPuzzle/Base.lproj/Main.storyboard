@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FD2-Zl-lR8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Corbel-Bold.ttf">
+            <string>Corbel-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--AV Player View Controller-->
+        <scene sceneID="lwe-0n-gcs">
+            <objects>
+                <avPlayerViewController storyboardIdentifier="attract" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" showsPlaybackControls="NO" videoGravity="AVLayerVideoGravityResizeAspect" id="Bc7-Km-jox" customClass="AttractScreenViewController" customModule="LostSpeechPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OkP-nT-tfy"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <segue destination="Q1Y-iY-5vp" kind="show" identifier="firstSegue" animates="NO" id="y4O-SF-3yt"/>
+                    </connections>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DeP-jc-avF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1383" y="206"/>
+        </scene>
+        <!--Begin View Controller-->
+        <scene sceneID="VDT-53-0Db">
+            <objects>
+                <viewController storyboardIdentifier="pickingparent" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q1Y-iY-5vp" customClass="BeginViewController" customModule="LostSpeechPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nhw-16-Kte"/>
+                        <viewControllerLayoutGuide type="bottom" id="595-Ej-1B4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qDS-3f-B51" customClass="UIScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="pagingEnabled" value="YES"/>
+                            <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                <size key="value" width="2048" height="768"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="bounces" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="8ug-O2-Jy8"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="scroller" destination="qDS-3f-B51" id="6A3-Gq-CJ4"/>
+                        <segue destination="Dsh-dy-ryi" kind="presentation" identifier="showAnswer" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="DvV-Cw-dcD"/>
+                        <segue destination="HKR-xC-B2v" kind="presentation" identifier="showPickerInfo" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="uXf-3R-g0c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LS-wJ-hmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621" y="206"/>
+        </scene>
+        <!--Picking Info View Controller-->
+        <scene sceneID="PUv-oY-kbE">
+            <objects>
+                <viewController id="HKR-xC-B2v" customClass="PickingInfoViewController" customModule="LostSpeechPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gaJ-xi-qXw"/>
+                        <viewControllerLayoutGuide type="bottom" id="2CB-89-NNa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hEM-ba-GBT">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Pick Pieces" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgy-cs-VFE">
+                                <rect key="frame" x="294" y="48" width="436" height="71"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="59"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbx-fy-IDK">
+                                <rect key="frame" x="55" y="170" width="914" height="322.5"/>
+                                <string key="text">Click on a piece that answers the question at the top of the screen. When you do you will see if you were right or wrong.
+
+If you were right the puzzle piece tracker at the bottom left will add the piece.
+
+When you have found all six pieces you can start to assemble the puzzle.</string>
+                                <fontDescription key="fontDescription" name="Corbel-Bold" family="Corbel" pointSize="33"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have Fun!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0P-HV-KPJ">
+                                <rect key="frame" x="400" y="592" width="223" height="68.5"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="57"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igz-HF-QuB">
+                                <rect key="frame" x="700" y="684" width="264" height="47"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="29"/>
+                                <state key="normal" title="Back to Picking Screen">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="onReturnClick" destination="HKR-xC-B2v" eventType="touchUpInside" id="k46-at-ni6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Igz-HF-QuB" secondAttribute="trailing" constant="40" id="0Mm-7h-3Ox"/>
+                            <constraint firstItem="dgy-cs-VFE" firstAttribute="top" secondItem="gaJ-xi-qXw" secondAttribute="bottom" constant="48" id="83g-Ay-55f"/>
+                            <constraint firstItem="R0P-HV-KPJ" firstAttribute="centerX" secondItem="hEM-ba-GBT" secondAttribute="centerX" id="OvJ-Mm-lEp"/>
+                            <constraint firstItem="2CB-89-NNa" firstAttribute="top" secondItem="R0P-HV-KPJ" secondAttribute="bottom" constant="107" id="RFF-45-35a"/>
+                            <constraint firstItem="dgy-cs-VFE" firstAttribute="centerX" secondItem="hEM-ba-GBT" secondAttribute="centerX" id="aGc-xj-Xzu"/>
+                            <constraint firstItem="2CB-89-NNa" firstAttribute="top" secondItem="Igz-HF-QuB" secondAttribute="bottom" constant="37" id="c58-Jv-qJ3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fbx-fy-IDK" secondAttribute="trailing" constant="35" id="k7W-sV-mnL"/>
+                            <constraint firstItem="Fbx-fy-IDK" firstAttribute="top" secondItem="dgy-cs-VFE" secondAttribute="bottom" constant="51" id="ndt-8j-ZK1"/>
+                            <constraint firstItem="Fbx-fy-IDK" firstAttribute="leading" secondItem="hEM-ba-GBT" secondAttribute="leadingMargin" constant="35" id="xFR-0E-ekS"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMb-8p-28u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2620" y="1215"/>
+        </scene>
+        <!--Answer View Controller-->
+        <scene sceneID="CXt-hR-Zyg">
+            <objects>
+                <viewController storyboardIdentifier="answerPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dsh-dy-ryi" customClass="AnswerViewController" customModule="LostSpeechPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qHo-qR-PcX"/>
+                        <viewControllerLayoutGuide type="bottom" id="1p2-Lc-RAT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="arf-Xd-sL9">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="saI-si-kU9">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omI-an-OeL">
+                                <rect key="frame" x="632" y="701" width="385" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="Knf-im-QVo"/>
+                                    <constraint firstAttribute="width" constant="385" id="tUL-yR-83g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="47"/>
+                                <state key="normal" image="select-another">
+                                    <color key="titleColor" name="shadowColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSAClick" destination="Dsh-dy-ryi" eventType="touchUpInside" id="BKg-xo-nOZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="saI-si-kU9" firstAttribute="centerY" secondItem="arf-Xd-sL9" secondAttribute="centerY" id="2oK-WK-u8s"/>
+                            <constraint firstItem="saI-si-kU9" firstAttribute="centerX" secondItem="arf-Xd-sL9" secondAttribute="centerX" id="8zI-2c-NmM"/>
+                            <constraint firstItem="saI-si-kU9" firstAttribute="height" secondItem="arf-Xd-sL9" secondAttribute="height" id="T6B-LI-XFO"/>
+                            <constraint firstItem="omI-an-OeL" firstAttribute="top" secondItem="qHo-qR-PcX" secondAttribute="bottom" constant="701" id="chm-yh-FZv"/>
+                            <constraint firstItem="omI-an-OeL" firstAttribute="leading" secondItem="arf-Xd-sL9" secondAttribute="leadingMargin" constant="612" id="kvA-I4-i1f"/>
+                            <constraint firstItem="saI-si-kU9" firstAttribute="width" secondItem="arf-Xd-sL9" secondAttribute="width" id="pko-V2-O39"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="bgImageView" destination="saI-si-kU9" id="Hhk-BL-hch"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCc-av-kOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2486" y="-671"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gSy-WO-hfH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="FD2-Zl-lR8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RB6-wc-iNv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bc7-Km-jox" kind="relationship" relationship="rootViewController" id="Kvd-TV-pfN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6f5-xT-Mht" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1383" y="-671"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="select-another" width="1065" height="172"/>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PieceTracker" customModule="LostSpeechPuzzle" customModuleProvider="target">
+            <connections>
+                <outlet property="placeholder1" destination="J6p-LE-lRA" id="Raz-HS-USE"/>
+                <outlet property="placeholder2" destination="uFb-hY-Nlq" id="crc-XE-XRA"/>
+                <outlet property="placeholder3" destination="3lr-Nf-eZb" id="epv-bo-yBf"/>
+                <outlet property="placeholder4" destination="oqP-fb-5fH" id="Sp0-Zn-lSw"/>
+                <outlet property="placeholder5" destination="ZP9-nA-m3d" id="ZLg-L1-fwx"/>
+                <outlet property="placeholder6" destination="Axw-nX-Ay6" id="YZD-by-ebT"/>
+                <outlet property="topLabel" destination="DAC-ga-3Fz" id="maA-1s-Qft"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puzzle Pieces: 0 / 6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-ga-3Fz">
+                    <rect key="frame" x="86" y="13" width="147.5" height="19.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzlepiece-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="uFb-hY-Nlq">
+                    <rect key="frame" x="61" y="40" width="41.5" height="41.5"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzlepiece-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="oqP-fb-5fH">
+                    <rect key="frame" x="165" y="40" width="41.5" height="41.5"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzlepiece-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ZP9-nA-m3d">
+                    <rect key="frame" x="217" y="40" width="41.5" height="41.5"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzlepiece-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Axw-nX-Ay6">
+                    <rect key="frame" x="268" y="40" width="41.5" height="41.5"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzlepiece-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="J6p-LE-lRA">
+                    <rect key="frame" x="10" y="40" width="41.5" height="41.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41.5" id="6jQ-xR-HIc"/>
+                        <constraint firstAttribute="height" constant="41.5" id="XK5-s7-5dx"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzlepiece-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="3lr-Nf-eZb">
+                    <rect key="frame" x="113" y="40" width="41.5" height="41.5"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oqP-fb-5fH" firstAttribute="width" secondItem="ZP9-nA-m3d" secondAttribute="width" id="0yQ-rK-Fa9"/>
+                <constraint firstItem="ZP9-nA-m3d" firstAttribute="centerY" secondItem="Axw-nX-Ay6" secondAttribute="centerY" id="5ZA-3I-fiT"/>
+                <constraint firstItem="oqP-fb-5fH" firstAttribute="leading" secondItem="3lr-Nf-eZb" secondAttribute="trailing" constant="11" id="74h-KB-7Xa"/>
+                <constraint firstAttribute="bottom" secondItem="J6p-LE-lRA" secondAttribute="bottom" constant="8.5" id="7Xn-rC-YGs"/>
+                <constraint firstItem="Axw-nX-Ay6" firstAttribute="leading" secondItem="ZP9-nA-m3d" secondAttribute="trailing" constant="10" id="FM2-Hj-qZO"/>
+                <constraint firstItem="ZP9-nA-m3d" firstAttribute="leading" secondItem="oqP-fb-5fH" secondAttribute="trailing" constant="10" id="G86-h3-k0w"/>
+                <constraint firstItem="oqP-fb-5fH" firstAttribute="centerY" secondItem="ZP9-nA-m3d" secondAttribute="centerY" id="Hf0-8a-4rS"/>
+                <constraint firstItem="uFb-hY-Nlq" firstAttribute="leading" secondItem="J6p-LE-lRA" secondAttribute="trailing" constant="10" id="JER-Y8-C2z"/>
+                <constraint firstItem="oqP-fb-5fH" firstAttribute="height" secondItem="ZP9-nA-m3d" secondAttribute="height" id="LGi-nm-Cdz"/>
+                <constraint firstItem="J6p-LE-lRA" firstAttribute="height" secondItem="uFb-hY-Nlq" secondAttribute="height" id="VxW-or-OJx"/>
+                <constraint firstItem="uFb-hY-Nlq" firstAttribute="centerY" secondItem="3lr-Nf-eZb" secondAttribute="centerY" id="Xew-xz-4r1"/>
+                <constraint firstItem="ZP9-nA-m3d" firstAttribute="height" secondItem="Axw-nX-Ay6" secondAttribute="height" id="gnd-pr-G4x"/>
+                <constraint firstItem="3lr-Nf-eZb" firstAttribute="height" secondItem="oqP-fb-5fH" secondAttribute="height" id="guo-gC-i1f"/>
+                <constraint firstItem="3lr-Nf-eZb" firstAttribute="leading" secondItem="uFb-hY-Nlq" secondAttribute="trailing" constant="10" id="hpM-CD-yjl"/>
+                <constraint firstItem="3lr-Nf-eZb" firstAttribute="centerY" secondItem="oqP-fb-5fH" secondAttribute="centerY" id="jTC-hN-894"/>
+                <constraint firstItem="J6p-LE-lRA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="nnD-OZ-KFB"/>
+                <constraint firstItem="J6p-LE-lRA" firstAttribute="centerY" secondItem="uFb-hY-Nlq" secondAttribute="centerY" id="od9-rD-T7w"/>
+                <constraint firstItem="ZP9-nA-m3d" firstAttribute="width" secondItem="Axw-nX-Ay6" secondAttribute="width" id="pzF-FR-ceu"/>
+                <constraint firstItem="J6p-LE-lRA" firstAttribute="width" secondItem="uFb-hY-Nlq" secondAttribute="width" id="qyt-Nh-efV"/>
+                <constraint firstItem="3lr-Nf-eZb" firstAttribute="width" secondItem="oqP-fb-5fH" secondAttribute="width" id="tHC-2A-jub"/>
+                <constraint firstItem="uFb-hY-Nlq" firstAttribute="width" secondItem="3lr-Nf-eZb" secondAttribute="width" id="trF-4J-YYy"/>
+                <constraint firstItem="DAC-ga-3Fz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vsM-Q4-Dss"/>
+                <constraint firstItem="DAC-ga-3Fz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="whx-cm-9n9"/>
+                <constraint firstItem="uFb-hY-Nlq" firstAttribute="height" secondItem="3lr-Nf-eZb" secondAttribute="height" id="xVo-YT-q50"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="413" y="161"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="puzzlepiece-placeholder" width="700" height="541"/>
+    </resources>
+</document>

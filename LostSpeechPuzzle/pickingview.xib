@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Corbel-Bold.ttf">
+            <string>Corbel-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickingView" customModule="LostSpeechPuzzle" customModuleProvider="target">
+            <connections>
+                <outlet property="exitBottomConstraint" destination="37m-9h-cc1" id="NWu-WF-iWZ"/>
+                <outlet property="exitConstraint" destination="5NB-KF-bLQ" id="OQu-p6-yis"/>
+                <outlet property="infoButton" destination="93y-ua-ROb" id="F4O-jf-u27"/>
+                <outlet property="puzzleContainer" destination="Qgh-Hj-fXn" id="1Be-nI-xCg"/>
+                <outlet property="question" destination="5ik-5d-b7m" id="0re-Qw-ibc"/>
+                <outlet property="spacer" destination="jph-vf-Ioa" id="yC6-5e-1pm"/>
+                <outlet property="topLabel" destination="BVz-k9-GIv" id="4Bm-jz-uS5"/>
+                <outlet property="tracker" destination="LHa-6L-H4d" id="Aom-1g-aco"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the Pieces that Answer the Question to Start the Puzzle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ik-5d-b7m">
+                    <rect key="frame" x="188" y="141" width="649.5" height="31"/>
+                    <fontDescription key="fontDescription" name="Corbel-Bold" family="Corbel" pointSize="25"/>
+                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93y-ua-ROb">
+                    <rect key="frame" x="939" y="696" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="5Tr-TU-efn"/>
+                        <constraint firstAttribute="height" constant="60" id="sJS-0d-xBT"/>
+                    </constraints>
+                    <state key="normal" image="helpicon"/>
+                    <state key="highlighted" image="gray-helpicon"/>
+                    <connections>
+                        <action selector="onHelpClick" destination="-1" eventType="touchUpInside" id="5oE-Ez-Ysc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do we know what Lincoln said in his Lost Speech?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVz-k9-GIv">
+                    <rect key="frame" x="217" y="25" width="590" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="13b-Dz-i9M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="40"/>
+                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jph-vf-Ioa">
+                    <rect key="frame" x="362" y="131" width="300" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ZP1-iR-t0h"/>
+                        <constraint firstAttribute="width" constant="300" id="atD-2a-Nj0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-Hj-fXn" customClass="PuzzleContainerView" customModule="LostSpeechPuzzle" customModuleProvider="target">
+                    <rect key="frame" x="165.5" y="138" width="693" height="492.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="693" id="T0A-sC-Gmc"/>
+                        <constraint firstAttribute="height" constant="492.5" id="XAe-k0-lSw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="alpha">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.zIndex">
+                            <integer key="value" value="-1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHa-6L-H4d" customClass="PieceTracker" customModule="LostSpeechPuzzle" customModuleProvider="target">
+                    <rect key="frame" x="25" y="666" width="320" height="90"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="ajF-ys-mun"/>
+                        <constraint firstAttribute="height" constant="90" id="pMo-5M-awq"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbx-aC-Gv3">
+                    <rect key="frame" x="939" y="25" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="QZL-gf-eeW"/>
+                        <constraint firstAttribute="height" constant="60" id="Tte-Lk-cCR"/>
+                    </constraints>
+                    <state key="normal" image="exiticon"/>
+                    <connections>
+                        <action selector="onExitClick" destination="-1" eventType="touchUpInside" id="1qn-JT-16l"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5ik-5d-b7m" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2Ja-qa-zVE"/>
+                <constraint firstAttribute="bottom" secondItem="rbx-aC-Gv3" secondAttribute="bottom" constant="683" id="37m-9h-cc1"/>
+                <constraint firstItem="rbx-aC-Gv3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="939" id="5NB-KF-bLQ"/>
+                <constraint firstItem="jph-vf-Ioa" firstAttribute="top" secondItem="BVz-k9-GIv" secondAttribute="bottom" constant="10" id="Bih-qE-tLV"/>
+                <constraint firstItem="Qgh-Hj-fXn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DaZ-Sv-cWN"/>
+                <constraint firstAttribute="bottom" secondItem="93y-ua-ROb" secondAttribute="bottom" constant="12" id="GAy-vs-ELf"/>
+                <constraint firstItem="Qgh-Hj-fXn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="HrY-4c-Uy3"/>
+                <constraint firstItem="5ik-5d-b7m" firstAttribute="top" secondItem="BVz-k9-GIv" secondAttribute="bottom" constant="20" id="JmJ-zD-FC3"/>
+                <constraint firstItem="LHa-6L-H4d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="Ltx-0z-C9T"/>
+                <constraint firstItem="BVz-k9-GIv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rlx-Fh-0G8"/>
+                <constraint firstItem="BVz-k9-GIv" firstAttribute="top" secondItem="rbx-aC-Gv3" secondAttribute="top" id="cmZ-KN-oup"/>
+                <constraint firstAttribute="bottom" secondItem="LHa-6L-H4d" secondAttribute="bottom" constant="12" id="fFF-67-rGz"/>
+                <constraint firstAttribute="trailing" secondItem="93y-ua-ROb" secondAttribute="trailing" constant="25" id="gBN-47-3Ze"/>
+                <constraint firstItem="Qgh-Hj-fXn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hvc-cm-5qP"/>
+                <constraint firstItem="jph-vf-Ioa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yuO-O5-S71"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HrY-4c-Uy3"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="exiticon" width="500" height="500"/>
+        <image name="gray-helpicon" width="255" height="255"/>
+        <image name="helpicon" width="255" height="255"/>
+    </resources>
+</document>

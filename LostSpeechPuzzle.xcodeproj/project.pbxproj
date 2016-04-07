@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		960BE2511C9F710800E9B502 /* puzzlepieces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 960BE2501C9F710800E9B502 /* puzzlepieces.plist */; };
+		960BE2531C9F84DD00E9B502 /* PieceDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960BE2521C9F84DD00E9B502 /* PieceDataProvider.swift */; };
+		960BE2551C9F8C5900E9B502 /* piecetracker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960BE2541C9F8C5900E9B502 /* piecetracker.xib */; };
+		962F26771CAAE2B200E5E062 /* PuzzleContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 962F26761CAAE2B200E5E062 /* PuzzleContainer.xib */; };
+		962F267D1CAAF11000E5E062 /* puzzleclasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F267C1CAAF11000E5E062 /* puzzleclasses.swift */; };
+		962F267F1CAAF11A00E5E062 /* viewanimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F267E1CAAF11A00E5E062 /* viewanimating.swift */; };
+		962F26821CAB2FF500E5E062 /* AlphaGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 962F26811CAB2FF500E5E062 /* AlphaGetter.m */; };
+		9632171C1CA91AB700261C45 /* IntroScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9632171B1CA91AB700261C45 /* IntroScrollView.swift */; };
+		9648764A1C9F128C00D5ACFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964876491C9F128C00D5ACFE /* AppDelegate.swift */; };
+		9648764F1C9F128C00D5ACFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9648764D1C9F128C00D5ACFE /* Main.storyboard */; };
+		964876511C9F128C00D5ACFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964876501C9F128C00D5ACFE /* Assets.xcassets */; };
+		964876541C9F128C00D5ACFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964876521C9F128C00D5ACFE /* LaunchScreen.storyboard */; };
+		9648765D1C9F14CD00D5ACFE /* Corbel-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9648765C1C9F14CD00D5ACFE /* Corbel-Bold.ttf */; };
+		9648765F1C9F14D500D5ACFE /* Corbel-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9648765E1C9F14D500D5ACFE /* Corbel-BoldItalic.ttf */; };
+		964876611C9F14DC00D5ACFE /* Corbel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 964876601C9F14DC00D5ACFE /* Corbel.ttf */; };
+		964876661C9F1AFB00D5ACFE /* AttractScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964876651C9F1AFB00D5ACFE /* AttractScreenViewController.swift */; };
+		96677C281CB3021000A2FA0B /* endtext.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96677C271CB3021000A2FA0B /* endtext.xib */; };
+		96677C2C1CB46AB300A2FA0B /* starter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96677C2B1CB46AB300A2FA0B /* starter.mp4 */; };
+		96677C2F1CB5B8AA00A2FA0B /* movingthreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 96677C2E1CB5B8A900A2FA0B /* movingthreading.m */; };
+		968223C31CA916E700D6171E /* IntroScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968223C21CA916E700D6171E /* IntroScrollView.xib */; };
+		968EAAEF1C9F26A200EEFA75 /* BeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968EAAEE1C9F26A200EEFA75 /* BeginViewController.swift */; };
+		968EAAF21C9F2DAC00EEFA75 /* CustomWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968EAAF11C9F2DAC00EEFA75 /* CustomWindow.swift */; };
+		968EAAF51C9F36EC00EEFA75 /* introview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968EAAF41C9F36EC00EEFA75 /* introview.xib */; };
+		968EAAF71C9F4C4A00EEFA75 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968EAAF61C9F4C4A00EEFA75 /* IntroView.swift */; };
+		968EAAFB1C9F5DC800EEFA75 /* pickingview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968EAAFA1C9F5DC800EEFA75 /* pickingview.xib */; };
+		968EAAFD1C9F5DF600EEFA75 /* PickingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968EAAFC1C9F5DF600EEFA75 /* PickingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		960BE2501C9F710800E9B502 /* puzzlepieces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = puzzlepieces.plist; sourceTree = "<group>"; };
+		960BE2521C9F84DD00E9B502 /* PieceDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceDataProvider.swift; sourceTree = "<group>"; };
+		960BE2541C9F8C5900E9B502 /* piecetracker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = piecetracker.xib; sourceTree = "<group>"; };
+		962F26761CAAE2B200E5E062 /* PuzzleContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PuzzleContainer.xib; sourceTree = "<group>"; };
+		962F267C1CAAF11000E5E062 /* puzzleclasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = puzzleclasses.swift; sourceTree = "<group>"; };
+		962F267E1CAAF11A00E5E062 /* viewanimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewanimating.swift; sourceTree = "<group>"; };
+		962F26801CAB2FF400E5E062 /* LostSpeechPuzzle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LostSpeechPuzzle-Bridging-Header.h"; sourceTree = "<group>"; };
+		962F26811CAB2FF500E5E062 /* AlphaGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaGetter.m; sourceTree = "<group>"; };
+		962F26831CAB300B00E5E062 /* AlphaGetter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlphaGetter.h; sourceTree = "<group>"; };
+		9632171B1CA91AB700261C45 /* IntroScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScrollView.swift; sourceTree = "<group>"; };
+		964876461C9F128C00D5ACFE /* LostSpeechPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostSpeechPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		964876491C9F128C00D5ACFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9648764E1C9F128C00D5ACFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		964876501C9F128C00D5ACFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = LostSpeechPuzzle/Assets.xcassets; sourceTree = "<group>"; };
+		964876531C9F128C00D5ACFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		964876551C9F128C00D5ACFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9648765C1C9F14CD00D5ACFE /* Corbel-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Corbel-Bold.ttf"; sourceTree = "<group>"; };
+		9648765E1C9F14D500D5ACFE /* Corbel-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Corbel-BoldItalic.ttf"; sourceTree = "<group>"; };
+		964876601C9F14DC00D5ACFE /* Corbel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Corbel.ttf; sourceTree = "<group>"; };
+		964876651C9F1AFB00D5ACFE /* AttractScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractScreenViewController.swift; sourceTree = "<group>"; };
+		96677C271CB3021000A2FA0B /* endtext.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = endtext.xib; sourceTree = "<group>"; };
+		96677C2B1CB46AB300A2FA0B /* starter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = starter.mp4; sourceTree = "<group>"; };
+		96677C2D1CB5B89C00A2FA0B /* movingthreading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = movingthreading.h; sourceTree = "<group>"; };
+		96677C2E1CB5B8A900A2FA0B /* movingthreading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = movingthreading.m; sourceTree = "<group>"; };
+		968223C21CA916E700D6171E /* IntroScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroScrollView.xib; sourceTree = "<group>"; };
+		968EAAEE1C9F26A200EEFA75 /* BeginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginViewController.swift; sourceTree = "<group>"; };
+		968EAAF11C9F2DAC00EEFA75 /* CustomWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWindow.swift; sourceTree = "<group>"; };
+		968EAAF41C9F36EC00EEFA75 /* introview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = introview.xib; sourceTree = "<group>"; };
+		968EAAF61C9F4C4A00EEFA75 /* IntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		968EAAFA1C9F5DC800EEFA75 /* pickingview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pickingview.xib; sourceTree = "<group>"; };
+		968EAAFC1C9F5DF600EEFA75 /* PickingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		964876431C9F128C00D5ACFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		962F26751CAAE29800E5E062 /* puzzle assembly */ = {
+			isa = PBXGroup;
+			children = (
+				962F26761CAAE2B200E5E062 /* PuzzleContainer.xib */,
+				962F267C1CAAF11000E5E062 /* puzzleclasses.swift */,
+				962F267E1CAAF11A00E5E062 /* viewanimating.swift */,
+				962F26811CAB2FF500E5E062 /* AlphaGetter.m */,
+				962F26801CAB2FF400E5E062 /* LostSpeechPuzzle-Bridging-Header.h */,
+				962F26831CAB300B00E5E062 /* AlphaGetter.h */,
+				96677C2D1CB5B89C00A2FA0B /* movingthreading.h */,
+				96677C2E1CB5B8A900A2FA0B /* movingthreading.m */,
+			);
+			name = "puzzle assembly";
+			sourceTree = "<group>";
+		};
+		9648763D1C9F128C00D5ACFE = {
+			isa = PBXGroup;
+			children = (
+				9648765B1C9F14BE00D5ACFE /* Resources */,
+				964876481C9F128C00D5ACFE /* LostSpeechPuzzle */,
+				964876471C9F128C00D5ACFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		964876471C9F128C00D5ACFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				964876461C9F128C00D5ACFE /* LostSpeechPuzzle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		964876481C9F128C00D5ACFE /* LostSpeechPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				968EAAED1C9F247200EEFA75 /* extensions */,
+				968EAAEC1C9F246C00EEFA75 /* src */,
+				964876641C9F1ADF00D5ACFE /* view controllers */,
+				964876491C9F128C00D5ACFE /* AppDelegate.swift */,
+				968EAAF01C9F293B00EEFA75 /* config */,
+			);
+			path = LostSpeechPuzzle;
+			sourceTree = "<group>";
+		};
+		9648765B1C9F14BE00D5ACFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9648765C1C9F14CD00D5ACFE /* Corbel-Bold.ttf */,
+				9648765E1C9F14D500D5ACFE /* Corbel-BoldItalic.ttf */,
+				964876601C9F14DC00D5ACFE /* Corbel.ttf */,
+				960BE2501C9F710800E9B502 /* puzzlepieces.plist */,
+				96677C2B1CB46AB300A2FA0B /* starter.mp4 */,
+				964876501C9F128C00D5ACFE /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		964876641C9F1ADF00D5ACFE /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				964876651C9F1AFB00D5ACFE /* AttractScreenViewController.swift */,
+				968EAAEE1C9F26A200EEFA75 /* BeginViewController.swift */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		968EAAEC1C9F246C00EEFA75 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				960BE2521C9F84DD00E9B502 /* PieceDataProvider.swift */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		968EAAED1C9F247200EEFA75 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				962F26751CAAE29800E5E062 /* puzzle assembly */,
+				968EAAF31C9F36B100EEFA75 /* scroll view contents */,
+				968EAAF11C9F2DAC00EEFA75 /* CustomWindow.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		968EAAF01C9F293B00EEFA75 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				9648764D1C9F128C00D5ACFE /* Main.storyboard */,
+				964876521C9F128C00D5ACFE /* LaunchScreen.storyboard */,
+				964876551C9F128C00D5ACFE /* Info.plist */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		968EAAF31C9F36B100EEFA75 /* scroll view contents */ = {
+			isa = PBXGroup;
+			children = (
+				968EAAF41C9F36EC00EEFA75 /* introview.xib */,
+				968EAAF61C9F4C4A00EEFA75 /* IntroView.swift */,
+				968EAAFA1C9F5DC800EEFA75 /* pickingview.xib */,
+				968EAAFC1C9F5DF600EEFA75 /* PickingView.swift */,
+				960BE2541C9F8C5900E9B502 /* piecetracker.xib */,
+				968223C21CA916E700D6171E /* IntroScrollView.xib */,
+				9632171B1CA91AB700261C45 /* IntroScrollView.swift */,
+				96677C271CB3021000A2FA0B /* endtext.xib */,
+			);
+			name = "scroll view contents";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		964876451C9F128C00D5ACFE /* LostSpeechPuzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 964876581C9F128C00D5ACFE /* Build configuration list for PBXNativeTarget "LostSpeechPuzzle" */;
+			buildPhases = (
+				964876421C9F128C00D5ACFE /* Sources */,
+				964876431C9F128C00D5ACFE /* Frameworks */,
+				964876441C9F128C00D5ACFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LostSpeechPuzzle;
+			productName = LostSpeechPuzzle;
+			productReference = 964876461C9F128C00D5ACFE /* LostSpeechPuzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9648763E1C9F128C00D5ACFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "William Rosenbloom - Trillium Productions";
+				TargetAttributes = {
+					964876451C9F128C00D5ACFE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 964876411C9F128C00D5ACFE /* Build configuration list for PBXProject "LostSpeechPuzzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9648763D1C9F128C00D5ACFE;
+			productRefGroup = 964876471C9F128C00D5ACFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				964876451C9F128C00D5ACFE /* LostSpeechPuzzle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		964876441C9F128C00D5ACFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9648765D1C9F14CD00D5ACFE /* Corbel-Bold.ttf in Resources */,
+				964876541C9F128C00D5ACFE /* LaunchScreen.storyboard in Resources */,
+				9648765F1C9F14D500D5ACFE /* Corbel-BoldItalic.ttf in Resources */,
+				962F26771CAAE2B200E5E062 /* PuzzleContainer.xib in Resources */,
+				968EAAFB1C9F5DC800EEFA75 /* pickingview.xib in Resources */,
+				96677C2C1CB46AB300A2FA0B /* starter.mp4 in Resources */,
+				96677C281CB3021000A2FA0B /* endtext.xib in Resources */,
+				964876611C9F14DC00D5ACFE /* Corbel.ttf in Resources */,
+				968EAAF51C9F36EC00EEFA75 /* introview.xib in Resources */,
+				968223C31CA916E700D6171E /* IntroScrollView.xib in Resources */,
+				960BE2551C9F8C5900E9B502 /* piecetracker.xib in Resources */,
+				960BE2511C9F710800E9B502 /* puzzlepieces.plist in Resources */,
+				964876511C9F128C00D5ACFE /* Assets.xcassets in Resources */,
+				9648764F1C9F128C00D5ACFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		964876421C9F128C00D5ACFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962F267F1CAAF11A00E5E062 /* viewanimating.swift in Sources */,
+				968EAAFD1C9F5DF600EEFA75 /* PickingView.swift in Sources */,
+				962F267D1CAAF11000E5E062 /* puzzleclasses.swift in Sources */,
+				968EAAF21C9F2DAC00EEFA75 /* CustomWindow.swift in Sources */,
+				960BE2531C9F84DD00E9B502 /* PieceDataProvider.swift in Sources */,
+				968EAAEF1C9F26A200EEFA75 /* BeginViewController.swift in Sources */,
+				96677C2F1CB5B8AA00A2FA0B /* movingthreading.m in Sources */,
+				968EAAF71C9F4C4A00EEFA75 /* IntroView.swift in Sources */,
+				964876661C9F1AFB00D5ACFE /* AttractScreenViewController.swift in Sources */,
+				962F26821CAB2FF500E5E062 /* AlphaGetter.m in Sources */,
+				9632171C1CA91AB700261C45 /* IntroScrollView.swift in Sources */,
+				9648764A1C9F128C00D5ACFE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9648764D1C9F128C00D5ACFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9648764E1C9F128C00D5ACFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		964876521C9F128C00D5ACFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				964876531C9F128C00D5ACFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		964876561C9F128C00D5ACFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		964876571C9F128C00D5ACFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		964876591C9F128C00D5ACFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = LostSpeechPuzzle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trillfilm.mclean.LostSpeechPuzzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LostSpeechPuzzle/LostSpeechPuzzle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9648765A1C9F128C00D5ACFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = LostSpeechPuzzle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trillfilm.mclean.LostSpeechPuzzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LostSpeechPuzzle/LostSpeechPuzzle-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		964876411C9F128C00D5ACFE /* Build configuration list for PBXProject "LostSpeechPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964876561C9F128C00D5ACFE /* Debug */,
+				964876571C9F128C00D5ACFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		964876581C9F128C00D5ACFE /* Build configuration list for PBXNativeTarget "LostSpeechPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964876591C9F128C00D5ACFE /* Debug */,
+				9648765A1C9F128C00D5ACFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9648763E1C9F128C00D5ACFE /* Project object */;
+}
