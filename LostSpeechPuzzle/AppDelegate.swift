@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // TODO: confirm the user isn't there
         let alert = UIAlertController(title: "Are you still there?", message: "You haven't touched anything in a while. Are you still there or should we close the app?", preferredStyle: .Alert)
         let subtimer = NSTimer(timeInterval: CONFIRM_TIMEOUT, target: self, selector: "revertToAttract", userInfo: nil, repeats: false)
-        alert.addAction(UIAlertAction(title: "NO! I'm still here!", style: UIAlertActionStyle.Cancel, handler: { (action: UIAlertAction) -> Void in
+        alert.addAction(UIAlertAction(title: "Yes, I'm still here!", style: UIAlertActionStyle.Cancel, handler: { (action: UIAlertAction) -> Void in
             subtimer.invalidate()
             self.startIdleTimer()
         }))
