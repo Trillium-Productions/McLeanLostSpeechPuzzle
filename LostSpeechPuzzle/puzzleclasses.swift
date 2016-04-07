@@ -109,8 +109,8 @@ enum CongratViewColor {
 }
 
 func middleOfRect(frame: CGRect, withSize size: CGSize) -> CGRect {
-    let left = 0.5 * (frame.width - size.width)
-    let top = 0.5 * (frame.height - size.height)
+    let left = frame.origin.x + 0.5 * (frame.width - size.width)
+    let top = frame.origin.y + 0.5 * (frame.height - size.height)
     return CGRect(origin: CGPoint(x: left, y: top), size: size)
 }
 
