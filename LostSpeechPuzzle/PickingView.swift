@@ -361,9 +361,6 @@ class PassthroughView: UIView {
                             iv.alpha = 0
                             self.addSubview(iv)
                             UIView.animateWithDuration(0.9, animations: { () -> Void in
-                                self.exitConstraint.constant = 25
-                                self.exitBottomConstraint.constant = 25
-                                self.layoutIfNeeded()
                                 iv.alpha = 1
                                 }, completion: { (finished: Bool) -> Void in
                                     self.puzzleContainer.removeFromSuperview()
@@ -395,6 +392,11 @@ class PassthroughView: UIView {
                                                         self.parentViewController.scroller.scrollEnabled = true
                                                     }
                                                 )
+                                        })
+                                        UIView.animateWithDuration(0.6, animations: { () -> Void in
+                                            self.exitConstraint.constant = 25
+                                            self.exitBottomConstraint.constant = 25
+                                            self.layoutIfNeeded()
                                         })
                                     })
                                     congrat.performAnimationWithCompletion({ () -> Void in

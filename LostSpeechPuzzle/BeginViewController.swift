@@ -19,6 +19,11 @@ class BeginViewController: UIViewController, IntroViewDelegate {
         content.intro.delegate = self
         content.picker.parentViewController = self
         scroller.addSubview(content)
+        let rec = UITapGestureRecognizer(target: self, action: "onSTCTap")
+        rec.numberOfTouchesRequired = 1
+        rec.numberOfTapsRequired = 1
+        rec.cancelsTouchesInView = false
+        content.intro.stcPrompt.addGestureRecognizer(rec)
         super.viewDidLoad()
     }
     
@@ -30,6 +35,10 @@ class BeginViewController: UIViewController, IntroViewDelegate {
     override func viewDidDisappear(animated: Bool) {
         content.intro.stopAnimation()
         super.viewDidAppear(animated)
+    }
+    
+    func onSTCTap() {
+        scroller.setContentOffset(CGPoint(x: 1024, y: 0), animated: true)
     }
     
     func handleIntroViewTap(sender: IntroView) {
