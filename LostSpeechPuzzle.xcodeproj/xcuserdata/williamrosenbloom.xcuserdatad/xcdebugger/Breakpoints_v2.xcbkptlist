@@ -313,11 +313,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LostSpeechPuzzle/PickingView.swift"
-            timestampString = "482937687.109517"
+            timestampString = "482940387.925142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "367"
-            endingLineNumber = "367"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
             landmarkName = "draggablePieceDidEndDragging(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -329,23 +329,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LostSpeechPuzzle/PickingView.swift"
-            timestampString = "482937687.109517"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "365"
-            endingLineNumber = "365"
-            landmarkName = "draggablePieceDidEndDragging(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LostSpeechPuzzle/PickingView.swift"
-            timestampString = "482937687.109517"
+            timestampString = "482940387.925142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "366"
@@ -360,12 +344,28 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LostSpeechPuzzle/puzzleclasses.swift"
-            timestampString = "481667482.654711"
+            filePath = "LostSpeechPuzzle/PickingView.swift"
+            timestampString = "482940387.925142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "367"
+            endingLineNumber = "367"
+            landmarkName = "draggablePieceDidEndDragging(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LostSpeechPuzzle/puzzleclasses.swift"
+            timestampString = "482940387.925142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "validateDraggablePosition(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -377,11 +377,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LostSpeechPuzzle/PickingView.swift"
-            timestampString = "482937687.109517"
+            timestampString = "482940387.925142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "375"
-            endingLineNumber = "375"
+            startingLineNumber = "377"
+            endingLineNumber = "377"
             landmarkName = "draggablePieceDidEndDragging(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -393,11 +393,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LostSpeechPuzzle/PickingView.swift"
-            timestampString = "482937687.109517"
+            timestampString = "482940387.925142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "379"
-            endingLineNumber = "379"
+            startingLineNumber = "381"
+            endingLineNumber = "381"
             landmarkName = "draggablePieceDidEndDragging(_:)"
             landmarkType = "5">
          </BreakpointContent>

@@ -333,6 +333,7 @@ class PassthroughView: UIView {
                                 thing.delegate = self
                             }
                             self.parentViewController.view.userInteractionEnabled = true
+                            self.puzzleContainer.startBorderAnimating()
                         })
                 })
         }
@@ -366,6 +367,7 @@ class PassthroughView: UIView {
                             }
                         }
                         if count == 0 {
+                            self.puzzleContainer.stopBorderAnimating()
                             let iv = UIImageView(frame: self.puzzleContainer.frame)
                             iv.image = UIImage(named: "complete-puzzle")
                             iv.alpha = 0

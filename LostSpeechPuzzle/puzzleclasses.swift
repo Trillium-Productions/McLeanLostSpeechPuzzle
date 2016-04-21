@@ -46,6 +46,9 @@ protocol PuzzleInfoButtonDelegate {
     func puzzleInfoButtonClicked()
 }
 
+let kPuzzleViewColorClearWhite = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
+let kPuzzleViewColorWhite = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+
 @IBDesignable class PuzzleContainerView: UIView {
     
     let ACCEPTABLE_ROTATION_RANGE = CGFloat(M_PI / 6)
@@ -53,6 +56,7 @@ protocol PuzzleInfoButtonDelegate {
     
     @IBOutlet var overlay: UIImageView!
     let dprov = (UIApplication.sharedApplication().delegate as! AppDelegate).DATA_PROVIDER
+    let canim: CABasicAnimation
     
     func create() {
         let arr = NSBundle.mainBundle().loadNibNamed("PuzzleContainer", owner: self, options: nil)
@@ -61,16 +65,44 @@ protocol PuzzleInfoButtonDelegate {
                 addSubview(view)
             }
         }
+        layer.borderWidth = 4
+        layer.borderColor = kPuzzleViewColorWhite.CGColor
     }
     
     override init(frame: CGRect) {
+        canim = CABasicAnimation(keyPath: "borderColor");
+        canim.fromValue = kPuzzleViewColorClearWhite.CGColor
+        canim.toValue = kPuzzleViewColorWhite
+        canim.duration = 0.5
+        canim.repeatCount = FLT_MAX
+        canim.autoreverses = true
+        canim.removedOnCompletion = false
+        canim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         super.init(frame: frame)
         create()
     }
     
     required init?(coder aDecoder: NSCoder) {
+        canim = CABasicAnimation(keyPath: "borderColor");
+        canim.fromValue = kPuzzleViewColorClearWhite.CGColor
+        canim.toValue = kPuzzleViewColorWhite
+        canim.duration = 0.6
+        canim.repeatCount = FLT_MAX
+        canim.autoreverses = true
+        canim.removedOnCompletion = false
+        canim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         super.init(coder: aDecoder)
         create()
+    }
+    
+    func startBorderAnimating() {
+        stopBorderAnimating()
+        layer.addAnimation(canim, forKey: "borderColor")
+    }
+    
+    func stopBorderAnimating() {
+        layer.removeAllAnimations()
+        layer.borderColor = kPuzzleViewColorWhite.CGColor
     }
     
     func originForType(type: FilledPiece) -> CGPoint {
