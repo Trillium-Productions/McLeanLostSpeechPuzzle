@@ -36,6 +36,9 @@
 		96BC2A001CC9035300A9EE36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BC29FF1CC9035200A9EE36 /* UIKit.framework */; };
 		96BC2A041CC9036100A9EE36 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BC2A031CC9036100A9EE36 /* AVFoundation.framework */; };
 		96BC2A061CC9036600A9EE36 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BC2A051CC9036600A9EE36 /* AVKit.framework */; };
+		96BC2A151CC9436100A9EE36 /* LostSpeechPuzzle-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 962F26801CAB2FF400E5E062 /* LostSpeechPuzzle-Bridging-Header.h */; };
+		96BC2A161CC9436100A9EE36 /* AlphaGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 962F26831CAB300B00E5E062 /* AlphaGetter.h */; };
+		96BC2A171CC9436100A9EE36 /* movingthreading.h in Headers */ = {isa = PBXBuildFile; fileRef = 96677C2D1CB5B89C00A2FA0B /* movingthreading.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -211,6 +214,19 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		96BC2A141CC9434200A9EE36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BC2A151CC9436100A9EE36 /* LostSpeechPuzzle-Bridging-Header.h in Headers */,
+				96BC2A161CC9436100A9EE36 /* AlphaGetter.h in Headers */,
+				96BC2A171CC9436100A9EE36 /* movingthreading.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		964876451C9F128C00D5ACFE /* LostSpeechPuzzle */ = {
 			isa = PBXNativeTarget;
@@ -219,6 +235,7 @@
 				964876421C9F128C00D5ACFE /* Sources */,
 				964876431C9F128C00D5ACFE /* Frameworks */,
 				964876441C9F128C00D5ACFE /* Resources */,
+				96BC2A141CC9434200A9EE36 /* Headers */,
 			);
 			buildRules = (
 			);
