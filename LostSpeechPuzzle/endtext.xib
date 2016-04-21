@@ -22,14 +22,14 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uft-I1-Ayp">
-                    <rect key="frame" x="-8.5" y="279.5" width="518.5" height="159"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uft-I1-Ayp">
+                    <rect key="frame" x="1" y="223" width="500" height="391"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="518" id="Uwr-iB-4vd"/>
+                        <constraint firstAttribute="width" constant="500" id="Uwr-iB-4vd"/>
                     </constraints>
                     <string key="text">Using the same sources you successfully identified in this interactive, historians have pieced together the intention, meaning, and even some key phrases of Lincoln’s 
 so-called Lost Speech.</string>
-                    <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="26"/>
+                    <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="40"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -40,10 +40,16 @@ so-called Lost Speech.</string>
                 <constraint firstItem="AcP-j7-CtW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="45" id="KHC-tN-4VC"/>
                 <constraint firstAttribute="trailing" secondItem="AcP-j7-CtW" secondAttribute="trailing" constant="20" id="P2P-E4-dih"/>
                 <constraint firstItem="AcP-j7-CtW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="dWY-Pn-Nvi"/>
+                <constraint firstItem="uft-I1-Ayp" firstAttribute="top" secondItem="AcP-j7-CtW" secondAttribute="bottom" constant="45" id="f6B-tM-taJ"/>
                 <constraint firstItem="uft-I1-Ayp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qKi-Xe-iKq"/>
                 <constraint firstItem="uft-I1-Ayp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rGM-ID-heh"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="qKi-Xe-iKq"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

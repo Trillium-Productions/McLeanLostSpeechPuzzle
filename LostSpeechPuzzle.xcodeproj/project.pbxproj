@@ -24,7 +24,6 @@
 		964876611C9F14DC00D5ACFE /* Corbel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 964876601C9F14DC00D5ACFE /* Corbel.ttf */; };
 		964876661C9F1AFB00D5ACFE /* AttractScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964876651C9F1AFB00D5ACFE /* AttractScreenViewController.swift */; };
 		96677C281CB3021000A2FA0B /* endtext.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96677C271CB3021000A2FA0B /* endtext.xib */; };
-		96677C2C1CB46AB300A2FA0B /* starter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96677C2B1CB46AB300A2FA0B /* starter.mp4 */; };
 		96677C2F1CB5B8AA00A2FA0B /* movingthreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 96677C2E1CB5B8A900A2FA0B /* movingthreading.m */; };
 		968223C31CA916E700D6171E /* IntroScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968223C21CA916E700D6171E /* IntroScrollView.xib */; };
 		968EAAEF1C9F26A200EEFA75 /* BeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968EAAEE1C9F26A200EEFA75 /* BeginViewController.swift */; };
@@ -33,6 +32,10 @@
 		968EAAF71C9F4C4A00EEFA75 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968EAAF61C9F4C4A00EEFA75 /* IntroView.swift */; };
 		968EAAFB1C9F5DC800EEFA75 /* pickingview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968EAAFA1C9F5DC800EEFA75 /* pickingview.xib */; };
 		968EAAFD1C9F5DF600EEFA75 /* PickingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968EAAFC1C9F5DF600EEFA75 /* PickingView.swift */; };
+		96BC29FD1CC8F8D600A9EE36 /* attracts.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96BC29FC1CC8F8D600A9EE36 /* attracts.mp4 */; };
+		96BC2A001CC9035300A9EE36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BC29FF1CC9035200A9EE36 /* UIKit.framework */; };
+		96BC2A041CC9036100A9EE36 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BC2A031CC9036100A9EE36 /* AVFoundation.framework */; };
+		96BC2A061CC9036600A9EE36 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BC2A051CC9036600A9EE36 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +60,6 @@
 		964876601C9F14DC00D5ACFE /* Corbel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Corbel.ttf; sourceTree = "<group>"; };
 		964876651C9F1AFB00D5ACFE /* AttractScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractScreenViewController.swift; sourceTree = "<group>"; };
 		96677C271CB3021000A2FA0B /* endtext.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = endtext.xib; sourceTree = "<group>"; };
-		96677C2B1CB46AB300A2FA0B /* starter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = starter.mp4; sourceTree = "<group>"; };
 		96677C2D1CB5B89C00A2FA0B /* movingthreading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = movingthreading.h; sourceTree = "<group>"; };
 		96677C2E1CB5B8A900A2FA0B /* movingthreading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = movingthreading.m; sourceTree = "<group>"; };
 		968223C21CA916E700D6171E /* IntroScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroScrollView.xib; sourceTree = "<group>"; };
@@ -67,6 +69,10 @@
 		968EAAF61C9F4C4A00EEFA75 /* IntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		968EAAFA1C9F5DC800EEFA75 /* pickingview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pickingview.xib; sourceTree = "<group>"; };
 		968EAAFC1C9F5DF600EEFA75 /* PickingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickingView.swift; sourceTree = "<group>"; };
+		96BC29FC1CC8F8D600A9EE36 /* attracts.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = attracts.mp4; sourceTree = "<group>"; };
+		96BC29FF1CC9035200A9EE36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96BC2A031CC9036100A9EE36 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		96BC2A051CC9036600A9EE36 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BC2A061CC9036600A9EE36 /* AVKit.framework in Frameworks */,
+				96BC2A041CC9036100A9EE36 /* AVFoundation.framework in Frameworks */,
+				96BC2A001CC9035300A9EE36 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +107,7 @@
 		9648763D1C9F128C00D5ACFE = {
 			isa = PBXGroup;
 			children = (
+				96BC29FE1CC9033B00A9EE36 /* Frameworks */,
 				9648765B1C9F14BE00D5ACFE /* Resources */,
 				964876481C9F128C00D5ACFE /* LostSpeechPuzzle */,
 				964876471C9F128C00D5ACFE /* Products */,
@@ -127,11 +137,11 @@
 		9648765B1C9F14BE00D5ACFE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				96BC29FC1CC8F8D600A9EE36 /* attracts.mp4 */,
 				9648765C1C9F14CD00D5ACFE /* Corbel-Bold.ttf */,
 				9648765E1C9F14D500D5ACFE /* Corbel-BoldItalic.ttf */,
 				964876601C9F14DC00D5ACFE /* Corbel.ttf */,
 				960BE2501C9F710800E9B502 /* puzzlepieces.plist */,
-				96677C2B1CB46AB300A2FA0B /* starter.mp4 */,
 				964876501C9F128C00D5ACFE /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -187,6 +197,16 @@
 				96677C271CB3021000A2FA0B /* endtext.xib */,
 			);
 			name = "scroll view contents";
+			sourceTree = "<group>";
+		};
+		96BC29FE1CC9033B00A9EE36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96BC2A051CC9036600A9EE36 /* AVKit.framework */,
+				96BC2A031CC9036100A9EE36 /* AVFoundation.framework */,
+				96BC29FF1CC9035200A9EE36 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +272,9 @@
 				9648765F1C9F14D500D5ACFE /* Corbel-BoldItalic.ttf in Resources */,
 				962F26771CAAE2B200E5E062 /* PuzzleContainer.xib in Resources */,
 				968EAAFB1C9F5DC800EEFA75 /* pickingview.xib in Resources */,
-				96677C2C1CB46AB300A2FA0B /* starter.mp4 in Resources */,
 				96677C281CB3021000A2FA0B /* endtext.xib in Resources */,
 				964876611C9F14DC00D5ACFE /* Corbel.ttf in Resources */,
+				96BC29FD1CC8F8D600A9EE36 /* attracts.mp4 in Resources */,
 				968EAAF51C9F36EC00EEFA75 /* introview.xib in Resources */,
 				968223C31CA916E700D6171E /* IntroScrollView.xib in Resources */,
 				960BE2551C9F8C5900E9B502 /* piecetracker.xib in Resources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 let PUZZLE_CONTAINER_SIZE = CGSize(width: 693, height: 492.5)
 
@@ -15,6 +16,7 @@ func vectorDistance(startingPoint start: CGPoint, endingPoint end: CGPoint) -> C
 }
 
 protocol PieceTrackerDelegate {
+    func finalPieceWillBeAccepted()
     func finalPieceAccepted()
 }
 
@@ -55,6 +57,9 @@ protocol PieceTrackerDelegate {
     }
     
     func acceptPiece(pieceViewToAdd piece: TPieceView, completion: (() -> Void)?) {
+        if place == 5 {
+            delegate?.finalPieceWillBeAccepted()
+        }
         let nView = phViews[place]
         piece.superview!.bringSubviewToFront(piece)
         UIView.animateWithDuration(0.9, animations: { () -> Void in
@@ -186,18 +191,19 @@ class PassthroughView: UIView {
     let dataProvider = (UIApplication.sharedApplication().delegate as! AppDelegate).DATA_PROVIDER
     
     let SCALE: CGFloat = 0.15
-    let FIELD_TOP: CGFloat = 200
+    let FIELD_TOP: CGFloat = 220
     let FIELD_BOTTOM: CGFloat = 625
     let PADDING: CGFloat = 10
     
-    @IBOutlet var tracker: PieceTracker!
-    @IBOutlet var question: UILabel!
+    @IBOutlet weak var tracker: PieceTracker!
+    @IBOutlet weak var question: UILabel!
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var spacer: UIView!
     @IBOutlet weak var puzzleContainer: PuzzleContainerView!
     @IBOutlet weak var infoButton: UIButton!
     @IBOutlet weak var exitConstraint: NSLayoutConstraint!
     @IBOutlet weak var exitBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var exitButton: UIButton!
     
     var parentViewController: BeginViewController!
     
@@ -292,6 +298,10 @@ class PassthroughView: UIView {
         parentViewController.showAnswerForPiece(sender)
     }
     
+    func finalPieceWillBeAccepted() {
+        parentViewController.view.userInteractionEnabled = false
+    }
+    
     func finalPieceAccepted() {
         parentViewController.scroller.scrollEnabled = false
         question.layer.removeAllAnimations()
@@ -323,6 +333,7 @@ class PassthroughView: UIView {
                             for thing in dpieces {
                                 thing.delegate = self
                             }
+                            self.parentViewController.view.userInteractionEnabled = true
                         })
                 })
         }
@@ -360,9 +371,11 @@ class PassthroughView: UIView {
                             iv.image = UIImage(named: "complete-puzzle")
                             iv.alpha = 0
                             self.addSubview(iv)
-                            UIView.animateWithDuration(0.9, animations: { () -> Void in
+                            UIView.animateWithDuration(0.5, animations: { () -> Void in
                                 iv.alpha = 1
+                                self.exitButton.alpha = 0
                                 }, completion: { (finished: Bool) -> Void in
+                                    self.exitButton.hidden = true
                                     self.puzzleContainer.removeFromSuperview()
                                     for thing in self.dpieces {
                                         thing.removeFromSuperview()
@@ -379,28 +392,32 @@ class PassthroughView: UIView {
                                     self.addSubview(cv)
                                     let congrat = CongratView(withParent: self)
                                     self.addSubview(congrat)
-                                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                                        UIView.transitionWithView(iv, duration: 0.6, options: .LayoutSubviews, animations: { () -> Void in
-                                            iv.image = UIImage(named: "vertical-puzzle")
-                                            iv.frame = nframe
-                                            }, completion:
-                                            { (finished2: Bool) -> Void in
-                                                UIView.animateWithDuration(0.6, animations: { () -> Void in
-                                                    cv.alpha = 1
-                                                    }, completion:
-                                                    { (finished3: Bool) -> Void in
-                                                        self.parentViewController.scroller.scrollEnabled = true
-                                                    }
-                                                )
-                                        })
-                                        UIView.animateWithDuration(0.6, animations: { () -> Void in
-                                            self.exitConstraint.constant = 25
-                                            self.exitBottomConstraint.constant = 25
-                                            self.layoutIfNeeded()
-                                        })
-                                    })
                                     congrat.performAnimationWithCompletion({ () -> Void in
                                         congrat.removeFromSuperview()
+                                    })
+                                    UIView.transitionWithView(iv, duration: 0.6, options: .LayoutSubviews, animations: { () -> Void in
+                                        iv.image = UIImage(named: "vertical-puzzle")
+                                        iv.frame = nframe
+                                        }, completion:
+                                        { (finished2: Bool) -> Void in
+                                            UIView.animateWithDuration(0.6, animations: { () -> Void in
+                                                cv.alpha = 1
+                                                }, completion:
+                                                { (finished3: Bool) -> Void in
+                                                    self.exitConstraint.constant = 25
+                                                    self.exitBottomConstraint.constant = 25
+                                                    self.layoutIfNeeded()
+                                                    self.exitButton.hidden = false;
+                                                    UIView.animateWithDuration(0.4, animations:
+                                                        { () -> Void in
+                                                            self.exitButton.alpha = 1
+                                                        }, completion:
+                                                        { (finished4: Bool) -> Void in
+                                                            self.parentViewController.scroller.scrollEnabled = true
+                                                        }
+                                                    )
+                                                }
+                                            )
                                     })
                             })
                         }
@@ -408,7 +425,7 @@ class PassthroughView: UIView {
                 }
             )
         } else {
-            // vibrate()
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
         }
     }
     

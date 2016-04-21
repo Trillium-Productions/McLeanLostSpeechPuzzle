@@ -113,9 +113,6 @@ class DraggablePieceView: UIImageView, UIGestureRecognizerDelegate {
     func positionInView(view: UIView, isWithinDistance distance: CGFloat, ofPoint point: CGPoint) -> Bool {
         let start = positionInView(view)
         let dist: CGFloat = sqrt(pow(start.x - point.x, 2) + pow(start.y - point.y, 2))
-        /*print("piece's origin = \(frame.origin)")
-        print("puzzle's origin = \(view.frame.origin)")
-        print("calculated position in puzzle = \(start)\n")*/
         return dist < distance
     }
     
@@ -175,6 +172,9 @@ class DraggablePieceView: UIImageView, UIGestureRecognizerDelegate {
     }
     
     override func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
+        if manager.isMovingActive {
+            return super.pointInside(point, withEvent: event)
+        }
         if bounds.contains(point) {
             let scaled = DraggablePieceView.transformPoint(point, inRect: bounds.size, toRect: image!.size)
             return !AlphaGetter.isImage(image!, transparentAtPoint: scaled)

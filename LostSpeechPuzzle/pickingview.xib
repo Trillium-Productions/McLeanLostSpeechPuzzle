@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickingView" customModule="LostSpeechPuzzle" customModuleProvider="target">
             <connections>
                 <outlet property="exitBottomConstraint" destination="37m-9h-cc1" id="NWu-WF-iWZ"/>
+                <outlet property="exitButton" destination="rbx-aC-Gv3" id="hhr-dx-W5Y"/>
                 <outlet property="exitConstraint" destination="5NB-KF-bLQ" id="OQu-p6-yis"/>
                 <outlet property="infoButton" destination="93y-ua-ROb" id="F4O-jf-u27"/>
                 <outlet property="puzzleContainer" destination="Qgh-Hj-fXn" id="1Be-nI-xCg"/>
@@ -27,8 +28,11 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the Pieces that Answer the Question to Start the Puzzle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ik-5d-b7m">
-                    <rect key="frame" x="188" y="141" width="649.5" height="31"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer the question and complete the puzzle by choosing the 6 sources that existed in the 1800s." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ik-5d-b7m">
+                    <rect key="frame" x="128" y="141" width="768.5" height="61.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="768.5" id="D1W-JZ-Boa"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="Corbel-Bold" family="Corbel" pointSize="25"/>
                     <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                     <nil key="highlightedColor"/>
@@ -63,7 +67,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-Hj-fXn" customClass="PuzzleContainerView" customModule="LostSpeechPuzzle" customModuleProvider="target">
-                    <rect key="frame" x="165.5" y="138" width="693" height="492.5"/>
+                    <rect key="frame" x="165" y="138" width="693" height="492.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="693" id="T0A-sC-Gmc"/>

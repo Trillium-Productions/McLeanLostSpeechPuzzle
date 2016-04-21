@@ -14,7 +14,7 @@ class AttractScreenViewController: AVPlayerViewController {
     
     let appdel = UIApplication.sharedApplication().delegate as! AppDelegate
     
-    override func viewDidLoad() {let url = NSBundle.mainBundle().URLForResource("starter", withExtension: "mp4")
+    override func viewDidLoad() {let url = NSBundle.mainBundle().URLForResource("attracts", withExtension: "mp4")
         appdel.navigator = self.navigationController!
         player = AVPlayer(URL: url!)
         player!.actionAtItemEnd = AVPlayerActionAtItemEnd.None

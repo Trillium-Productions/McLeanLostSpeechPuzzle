@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <pthread.h>
 
 typedef NS_ENUM(char, MovingDelegatedTransform) {
     MovingDelegatedTransform_Translation = 0,
@@ -15,6 +14,8 @@ typedef NS_ENUM(char, MovingDelegatedTransform) {
 };
 
 @interface MovingDelegateManager : NSObject
+
+@property (readonly) BOOL isMovingActive;
 
 - (id)init;
 

@@ -3,7 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,21 +15,28 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LincolnSpeaking" translatesAutoresizingMaskIntoConstraints="NO" id="3TI-vy-1cR">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mchclogo" translatesAutoresizingMaskIntoConstraints="NO" id="fcC-xA-85A">
+                                <rect key="frame" x="212" y="313" width="600" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fcC-xA-85A" secondAttribute="height" multiplier="300:71" id="CLB-Ha-5pw"/>
+                                    <constraint firstAttribute="width" constant="600" id="k71-m5-y6r"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="3TI-vy-1cR" secondAttribute="trailing" constant="-20" id="8wf-WP-ChC"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="3TI-vy-1cR" secondAttribute="leading" constant="20" id="CO6-8E-FhA"/>
-                            <constraint firstItem="3TI-vy-1cR" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="esX-K1-S5w"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3TI-vy-1cR" secondAttribute="bottom" id="gaS-il-rWt"/>
+                            <constraint firstItem="fcC-xA-85A" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZZi-Oj-6Zv"/>
+                            <constraint firstItem="fcC-xA-85A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="h50-V5-Njf"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,6 +44,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LincolnSpeaking" width="422" height="338"/>
+        <image name="mchclogo" width="1050" height="249"/>
     </resources>
 </document>

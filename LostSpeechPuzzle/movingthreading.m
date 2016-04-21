@@ -10,13 +10,17 @@
 #import "movingthreading.h"
 
 @implementation MovingDelegateManager {
-    BOOL transformActive;
+    BOOL translationActive;
     BOOL rotationActive;
 }
 
 - (id)init {
-    transformActive = rotationActive = false;
+    translationActive = rotationActive = false;
     return [super init];
+}
+
+- (BOOL) isMovingActive {
+    return translationActive || rotationActive;
 }
 
 - (void)registerMovementStartForTransform:(MovingDelegatedTransform)kind {
@@ -25,7 +29,7 @@
             rotationActive = true;
             break;
         case MovingDelegatedTransform_Translation:
-            transformActive = true;
+            translationActive = true;
             break;
     }
 }
@@ -33,13 +37,13 @@
 - (BOOL)getPermissionForTransformCallback:(MovingDelegatedTransform)kind {
     switch (kind) {
         case MovingDelegatedTransform_Translation:
-            transformActive = false;
+            translationActive = false;
             break;
         case MovingDelegatedTransform_Rotation:
             rotationActive = false;
             break;
     }
-    return !transformActive && !rotationActive;
+    return !translationActive && !rotationActive;
 }
 
 @end
