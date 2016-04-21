@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AudioToolbox
 
 let PUZZLE_CONTAINER_SIZE = CGSize(width: 693, height: 492.5)
 
@@ -424,8 +423,6 @@ class PassthroughView: UIView {
                     })
                 }
             )
-        } else {
-            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
         }
     }
     
