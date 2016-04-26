@@ -36,21 +36,30 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LJ-jj-pT7">
-                    <rect key="frame" x="381" y="114" width="607" height="231"/>
+                    <rect key="frame" x="381" y="114" width="607" height="258"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <string key="text">On May 29, 1856, a convention was held in Bloomington to form a new political party in Illinois dedicated to halting the spread of slavery. This party was named the Republican Party.
+                    <mutableString key="text">On May 29, 1856, a convention was held in Bloomington to form a new political party in Illinois dedicated to halting the spread of slavery. This party was named the Republican Party.
 
-Abraham Lincoln delivered the keynote address that evening to an estimated 1,000 people at Major’s Hall. This three-story building was located one block south of where you are right now! Lincoln spoke for approximately 90 minutes without notes. </string>
+Abraham Lincoln delivered the keynote address that evening to an estimated 1,000 people at Major’s Hall. This three-story building was located one block south of where you are right now! Lincoln spoke for approximately 90 minutes without notes.
+
+Although dubbed “lost,” the content of the speech is not a complete mystery. In fact, historians know much of what Lincoln said that historic night.</mutableString>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="22"/>
+                    <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="18"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stc" translatesAutoresizingMaskIntoConstraints="NO" id="bi6-lu-7Tc">
-                    <rect key="frame" x="212" y="658.5" width="600" height="64"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iu1-cL-bMr">
+                    <rect key="frame" x="36" y="395" width="952" height="195.5"/>
+                    <string key="text">Help us piece together the not-so-lost Lost Speech by identifying sources available during Lincoln’s era that have helped historians understand this passionate appeal against slavery.</string>
+                    <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stc" translatesAutoresizingMaskIntoConstraints="NO" id="bi6-lu-7Tc">
+                    <rect key="frame" x="363.5" y="661.5" width="297" height="64"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="bi6-lu-7Tc" secondAttribute="height" multiplier="75:8" id="5Il-sf-BlV"/>
-                        <constraint firstAttribute="width" constant="600" id="fgO-Ya-W5K"/>
+                        <constraint firstAttribute="height" constant="64" id="gmh-iF-aje"/>
+                        <constraint firstAttribute="width" constant="297" id="kps-Ri-roM"/>
                         <constraint firstAttribute="width" secondItem="bi6-lu-7Tc" secondAttribute="height" multiplier="11:1" id="vbJ-1S-BER"/>
                     </constraints>
                     <variation key="default">
@@ -59,13 +68,6 @@ Abraham Lincoln delivered the keynote address that evening to an estimated 1,000
                         </mask>
                     </variation>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iu1-cL-bMr">
-                    <rect key="frame" x="36" y="386" width="952" height="201.5"/>
-                    <string key="text">Although dubbed “lost,” the content of the speech is not a complete mystery. In fact, historians know much of what Lincoln said that historic night. Help us piece together the not-so-lost Lost Speech by identifying sources available during Lincoln’s era that have helped historians understand this passionate appeal against slavery.</string>
-                    <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="33"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
@@ -78,7 +80,7 @@ Abraham Lincoln delivered the keynote address that evening to an estimated 1,000
                 <constraint firstItem="5LJ-jj-pT7" firstAttribute="leading" secondItem="gki-xL-tJf" secondAttribute="trailing" constant="36" id="XEp-E9-sWP"/>
                 <constraint firstItem="gki-xL-tJf" firstAttribute="top" secondItem="PmD-uY-fyI" secondAttribute="bottom" constant="23" id="Yiq-1s-tNo"/>
                 <constraint firstItem="iu1-cL-bMr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Zal-Mw-DL2"/>
-                <constraint firstItem="iu1-cL-bMr" firstAttribute="top" secondItem="gki-xL-tJf" secondAttribute="bottom" constant="36" id="qB0-fx-dq8"/>
+                <constraint firstItem="iu1-cL-bMr" firstAttribute="top" secondItem="gki-xL-tJf" secondAttribute="bottom" constant="45" id="qB0-fx-dq8"/>
                 <constraint firstItem="PmD-uY-fyI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wEj-0H-CZa"/>
                 <constraint firstItem="bi6-lu-7Tc" firstAttribute="top" secondItem="iu1-cL-bMr" secondAttribute="bottom" constant="71" id="wzh-mk-ySb"/>
                 <constraint firstItem="bi6-lu-7Tc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yVH-gK-ZgF"/>
@@ -97,6 +99,6 @@ Abraham Lincoln delivered the keynote address that evening to an estimated 1,000
     </objects>
     <resources>
         <image name="LincolnSpeaking" width="422" height="338"/>
-        <image name="stc" width="1495" height="160"/>
+        <image name="stc" width="700" height="160"/>
     </resources>
 </document>

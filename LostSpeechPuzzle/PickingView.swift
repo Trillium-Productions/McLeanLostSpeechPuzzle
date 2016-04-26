@@ -315,6 +315,7 @@ class PassthroughView: UIView {
                 }
             }
             }) { (finished: Bool) -> Void in
+                self.question.layer.removeAllAnimations()
                 self.topLabel.removeFromSuperview()
                 self.spacer.removeFromSuperview()
                 self.question.removeFromSuperview()
@@ -325,6 +326,7 @@ class PassthroughView: UIView {
                     }
                 }
                 UIView.animateWithDuration(0.6, animations: { () -> Void in
+                    self.puzzleContainer.startBorderAnimating()
                     self.puzzleContainer.alpha = 1
                     }, completion: { (finished2: Bool) -> Void in
                         self.tracker.scatterPieces(self.puzzleContainer, completion: { (dpieces: [DraggablePieceView]) -> Void in
@@ -333,7 +335,6 @@ class PassthroughView: UIView {
                                 thing.delegate = self
                             }
                             self.parentViewController.view.userInteractionEnabled = true
-                            self.puzzleContainer.startBorderAnimating()
                         })
                 })
         }

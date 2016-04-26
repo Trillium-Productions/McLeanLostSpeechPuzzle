@@ -173,7 +173,7 @@ class DraggablePieceView: UIImageView, UIGestureRecognizerDelegate {
     
     override func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
         if manager.isMovingActive {
-            return super.pointInside(point, withEvent: event)
+            return bounds.contains(point)
         }
         if bounds.contains(point) {
             let scaled = DraggablePieceView.transformPoint(point, inRect: bounds.size, toRect: image!.size)

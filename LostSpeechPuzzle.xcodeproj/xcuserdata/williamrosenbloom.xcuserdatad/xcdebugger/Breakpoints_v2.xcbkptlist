@@ -313,11 +313,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LostSpeechPuzzle/PickingView.swift"
-            timestampString = "482940387.925142"
+            timestampString = "483314370.582952"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "368"
-            endingLineNumber = "368"
+            startingLineNumber = "369"
+            endingLineNumber = "369"
             landmarkName = "draggablePieceDidEndDragging(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -329,23 +329,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LostSpeechPuzzle/PickingView.swift"
-            timestampString = "482940387.925142"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "366"
-            endingLineNumber = "366"
-            landmarkName = "draggablePieceDidEndDragging(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LostSpeechPuzzle/PickingView.swift"
-            timestampString = "482940387.925142"
+            timestampString = "483314370.582952"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "367"
@@ -360,12 +344,28 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LostSpeechPuzzle/puzzleclasses.swift"
-            timestampString = "482940387.925142"
+            filePath = "LostSpeechPuzzle/PickingView.swift"
+            timestampString = "483314370.582952"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
+            landmarkName = "draggablePieceDidEndDragging(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LostSpeechPuzzle/puzzleclasses.swift"
+            timestampString = "483314101.094802"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "validateDraggablePosition(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -377,11 +377,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LostSpeechPuzzle/PickingView.swift"
-            timestampString = "482940387.925142"
+            timestampString = "483314370.582952"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "377"
-            endingLineNumber = "377"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
             landmarkName = "draggablePieceDidEndDragging(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -393,11 +393,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LostSpeechPuzzle/PickingView.swift"
-            timestampString = "482940387.925142"
+            timestampString = "483314370.582952"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "381"
-            endingLineNumber = "381"
+            startingLineNumber = "382"
+            endingLineNumber = "382"
             landmarkName = "draggablePieceDidEndDragging(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -415,6 +415,38 @@
             startingLineNumber = "133"
             endingLineNumber = "133"
             landmarkName = "onTranslationDetected()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LostSpeechPuzzle/viewanimating.swift"
+            timestampString = "483313783.387191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "pointInside(_:withEvent:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LostSpeechPuzzle/AlphaGetter.m"
+            timestampString = "483313895.599246"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "+isImage:TransparentAtPoint:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

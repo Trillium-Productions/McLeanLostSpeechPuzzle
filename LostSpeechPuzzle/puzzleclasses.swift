@@ -46,13 +46,13 @@ protocol PuzzleInfoButtonDelegate {
     func puzzleInfoButtonClicked()
 }
 
-let kPuzzleViewColorClearWhite = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
-let kPuzzleViewColorWhite = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
-
 @IBDesignable class PuzzleContainerView: UIView {
     
     let ACCEPTABLE_ROTATION_RANGE = CGFloat(M_PI / 6)
     let ACCEPTABLE_DISTANCE: CGFloat = 30
+    
+    let kPuzzleViewColorClearWhite = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
+    let kPuzzleViewColorWhite = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
     
     @IBOutlet var overlay: UIImageView!
     let dprov = (UIApplication.sharedApplication().delegate as! AppDelegate).DATA_PROVIDER
@@ -67,12 +67,13 @@ let kPuzzleViewColorWhite = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         }
         layer.borderWidth = 4
         layer.borderColor = kPuzzleViewColorWhite.CGColor
+        userInteractionEnabled = false
     }
     
     override init(frame: CGRect) {
         canim = CABasicAnimation(keyPath: "borderColor");
         canim.fromValue = kPuzzleViewColorClearWhite.CGColor
-        canim.toValue = kPuzzleViewColorWhite
+        canim.toValue = kPuzzleViewColorWhite.CGColor
         canim.duration = 0.5
         canim.repeatCount = FLT_MAX
         canim.autoreverses = true
@@ -85,7 +86,7 @@ let kPuzzleViewColorWhite = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
     required init?(coder aDecoder: NSCoder) {
         canim = CABasicAnimation(keyPath: "borderColor");
         canim.fromValue = kPuzzleViewColorClearWhite.CGColor
-        canim.toValue = kPuzzleViewColorWhite
+        canim.toValue = kPuzzleViewColorWhite.CGColor
         canim.duration = 0.6
         canim.repeatCount = FLT_MAX
         canim.autoreverses = true
